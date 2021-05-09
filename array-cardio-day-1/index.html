@@ -113,6 +113,14 @@
 
       // 7. sort Exercise
       // Sort the people alphabetically by last name
+      const sorted = people.sort((a, b) =>
+        a.split(", ")[0] > b.split(", ")[0]
+          ? 1
+          : a.split(", ")[0] < b.split(", ")[0]
+          ? -1
+          : 0
+      );
+      console.log(sorted);
 
       // 8. Reduce Exercise
       // Sum up the instances of each of these
